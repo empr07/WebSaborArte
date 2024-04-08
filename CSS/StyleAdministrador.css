@@ -1,0 +1,284 @@
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    z-index: 1;
+}
+
+.content {
+    margin-left: 220px;
+    z-index: 0;
+}
+
+.nav-header {
+    background-color: #2b3136;
+    height: 65px;
+}
+
+.nav-button {
+    color: #f4fff5;
+}
+
+.nav-button:hover {
+    background-color: #a7bbab;
+    color: rgb(252, 252, 252)
+}
+
+.nav-button {
+    text-decoration: none;
+}
+
+.nav-button-logout {
+    color: #d9534f !important;
+}
+
+.nav-button-logout:hover {
+    background-color: #d9534f;
+    color: rgb(252, 252, 252) !important
+}
+
+.nav-button-logout {
+    text-decoration: none;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.header-sidebar {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px #dbdbdb solid;
+    z-index: 1;
+}
+
+.mt-100{
+    margin-top: 50px;
+}
+
+
+.search {
+    cursor: pointer;
+    height: 45px;
+    width: 40px;
+    border-left: 1px #000000 solid;
+    border-top: 1px #000000 solid;
+    border-bottom: 1px #000000 solid;
+    border-right: 1px #000000 solid;
+    border-radius: 0px !important;
+}
+
+.search:disabled{
+    cursor:no-drop;
+    background-color: #030303b5 !important;
+
+}
+
+.input-search {
+    padding: 10px;
+    height: 45px;
+    border-left: 0px;
+    border-right: 1px #000000 solid;
+    border-top: 1px #000000 solid;
+    border-bottom: 1px #000000 solid;
+    border-left: 1px #000000 solid;
+
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+select {
+    padding: 5px 0px 5px 10px;
+    width: 15%;
+    height: 45px;
+    border: 1px #e2eee4 solid;
+}
+
+select:focus {
+    outline: none;
+}
+
+.bg-custom {
+    background-color: #000000;
+}
+
+.size-card-info {
+    font-size: 1.5em;
+}
+
+.size-card-amount {
+    font-size: 4em;
+}
+
+.card-rounded {
+    border-radius: 10px;
+}
+
+.footer-rounded {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.size-header {
+    font-size: .9em;
+}
+
+.text-small {
+    font-size: 1em;
+}
+
+#card-body-sales {
+    height: 243px;
+    overflow-x: hidden;
+}
+
+#card-earning {
+    height: 356px;
+}
+
+.amount-earning {
+    font-size: 6em;
+}
+
+
+.logo-text {
+    font-size: 24px; /* Tamaño de fuente deseado */
+    font-weight: bold; /* Otras propiedades de estilo según sea necesario */
+    color: #dee2e6;/* Añade cualquier otro estilo personalizado aquí */
+}
+
+
+/* Estilo para la tabla */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table th,
+.table td {
+    padding: 0.50rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+/* Estilo para los botones de editar y eliminar */
+.btn-primary,
+.btn-danger {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Estilo para el encabezado de la tabla */
+.table thead {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+/* Estilo para las filas impares */
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para las filas al pasar el ratón */
+.table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+/* Estilo para el botón + Nuevo Producto */
+.btn-new-product {
+    background-color: #FF4B2B; /* Color de fondo naranja */
+    color: #ffffff; /* Texto en blanco */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.2em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s ease-in-out; /* Transición suave de color de fondo */
+}
+
+.btn-new-product:hover {
+    background-color: #ff612f; /* Cambia el color al pasar el cursor */
+    animation: buttonHoverAnimation 0.3s ease-in-out; /* Aplica la animación al pasar el cursor */
+}
+
+/* Definición de la animación */
+@keyframes buttonHoverAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Estilo para el botón de búsqueda */
+.search {
+    background-color: #FF4B2B; /* Color de fondo naranja */
+    padding: 10px; /* Espaciado interno del botón */
+    border: none; /* Sin bordes */
+    border-radius: 50%; /* Bordes redondeados para hacerlo circular */
+    font-size: 1.2em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s ease-in-out; /* Transición suave de color de fondo */
+    display: inline-flex; /* Para que el contenido esté centrado verticalmente */
+    align-items: center; /* Para centrar el contenido verticalmente */
+    justify-content: center; /* Para centrar el contenido horizontalmente */
+}
+
+/* Estilo para el icono de búsqueda */
+.search svg {
+    transition: transform 0.3s ease-in-out; /* Transición suave de la transformación (rotación) */
+}
+
+/* Agregamos la animación solo al icono de búsqueda al pasar el cursor */
+.search:hover svg {
+    transform: rotate(45deg); /* Gira el icono 45 grados al pasar el cursor */
+}
+
+/* Agregamos una animación suave al botón completo al pasar el cursor */
+.search:hover {
+    background-color: #ff612f; /* Cambia el color de fondo del botón al pasar el cursor */
+}
+.btn-save {
+    background-color: #FF4B2B; /* Color de fondo naranja */
+    color: #ffffff; /* Texto en blanco */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.2em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    width: 100%; /* Ancho del botón al 100% del contenedor */
+}
+
+.btn-save:hover {
+    background-color: #ff612f; /* Cambia el color al pasar el cursor */
+}
+
+
+/*BOTON GUARDAR PROUCTO(PASTLES)*/
+.btn-custom-color {
+    background-color: #FF4B2B ; 
+    color: white; 
+    border: none; 
+}

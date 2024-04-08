@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="CSS/StyleInicio.css">
+    <link rel="stylesheet" href="CSS/Styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <H1>SABOR Y ARTE </H1>
+            </div>
+            <input type="search" id="search" class="input-search" placeholder="Buscar..."
+                onkeydown="handleKeyPress(event)">
+            <div class="nav-content">
+                <div class=" button">
+                    <a href="Inicio.html"><button>Inicio</button></a>
+                    <a href="Nosotros.html"> <button>Nosotros</button></a>
+                    <a href="#SUCURSALES"><button>Sucursales</button></a>
+                    <a href="#Comprar"><button>Comprar</button></a>
+                </div>
+                <div class="icon">
+                    <a href="Perfil.html"><button><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                            </svg></button></a>
+                    <a href="Carrito.html"><button><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg></button></a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="text-info">
+            <div>
+                <h1>En cada sabor, descubre un mundo. En cada arte, encuentra tu pasión. Bienvenido a Sabor y Arte,
+                    donde los sabores se convierten en experiencias y el arte se convierte en emociones. ¡Deleita tus
+                    sentidos y deja que tu alma se inspire!" </h1>
+                <a href="Nosotros.html"><button class="ver">Ver mas</button></a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="section1">
+            <div class="info-cart">
+                <div class="info">
+                    <div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                            fill="currentColor" class="bi bi-bag-check-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                        </svg></div>
+                    <div>Tu compra mas segura</div>
+                </div>
+                <div class="info">
+                    <div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                            fill="currentColor" class="bi bi-cake2-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m2.899.804.595-.792.598.79A.747.747 0 0 1 4 1.806v4.886c-.354-.06-.689-.127-1-.201V1.813a.747.747 0 0 1-.1-1.01ZM13 1.806v4.685a15.19 15.19 0 0 1-1 .201v-4.88a.747.747 0 0 1-.1-1.007l.595-.792.598.79A.746.746 0 0 1 13 1.806Zm-3 0a.746.746 0 0 0 .092-1.004l-.598-.79-.595.792A.747.747 0 0 0 9 1.813v5.17c.341-.013.675-.031 1-.055V1.806Zm-3 0v5.176c-.341-.012-.675-.03-1-.054V1.813a.747.747 0 0 1-.1-1.01l.595-.79.598.789A.747.747 0 0 1 7 1.806Z" />
+                            <path
+                                d="M4.5 6.988V4.226a22.6 22.6 0 0 1 1-.114V7.16c0 .131.101.24.232.25l.231.017c.332.024.672.043 1.02.055l.258.01a.25.25 0 0 0 .26-.25V4.003a29.015 29.015 0 0 1 1 0V7.24a.25.25 0 0 0 .258.25l.259-.009c.347-.012.687-.03 1.019-.055l.231-.017a.25.25 0 0 0 .232-.25V4.112c.345.031.679.07 1 .114v2.762a.25.25 0 0 0 .292.246l.291-.049c.364-.061.71-.13 1.033-.208l.192-.046a.25.25 0 0 0 .192-.243V4.621c.672.184 1.251.409 1.677.678.415.261.823.655.823 1.2V13.5c0 .546-.408.94-.823 1.201-.44.278-1.043.51-1.745.696-1.41.376-3.33.603-5.432.603-2.102 0-4.022-.227-5.432-.603-.702-.187-1.305-.418-1.745-.696C.408 14.44 0 14.046 0 13.5v-7c0-.546.408-.94.823-1.201.426-.269 1.005-.494 1.677-.678v2.067c0 .116.08.216.192.243l.192.046c.323.077.669.147 1.033.208l.292.05a.25.25 0 0 0 .291-.247ZM1 8.82v1.659a1.935 1.935 0 0 0 2.298.43.935.935 0 0 1 1.08.175l.348.349a2 2 0 0 0 2.615.185l.059-.044a1 1 0 0 1 1.2 0l.06.044a2 2 0 0 0 2.613-.185l.348-.348a.938.938 0 0 1 1.082-.175c.781.39 1.718.208 2.297-.426V8.833l-.68.907a.938.938 0 0 1-1.17.276 1.938 1.938 0 0 0-2.236.363l-.348.348a1 1 0 0 1-1.307.092l-.06-.044a2 2 0 0 0-2.399 0l-.06.044a1 1 0 0 1-1.306-.092l-.35-.35a1.935 1.935 0 0 0-2.233-.362.935.935 0 0 1-1.168-.277L1 8.82Z" />
+                        </svg></div>
+                    <div>Tus pasteles favoritos</div>
+                </div>
+                <div class="info">
+                    <div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                            fill="currentColor" class="bi bi-chat-square-heart" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12ZM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Z" />
+                            <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                        </svg></div>
+                    <div>El mejor servicio</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="Inicio-pastel">
+                <div class="contenedor-izquierdo">
+                    <div class="text">
+                        <h1>"Creando momentos para ti"</h1>
+                        <p>En el corazón de nuestra ciudad, se encuentra un rincón mágico que deleita los sentidos y
+                            eleva el alma: nuestra encantadora panadería. Al cruzar nuestra puerta, serás recibido por
+                            el aroma embriagador del pan recién horneado y el dulce perfume de pasteles
+                            frescos que te harán sentir como si estuvieras en un cuento de hadas gastronómico.</p>
+                    </div>
+                </div>
+                <div class="contenedor-derecho">
+                    <img src="IMG/Inico/img2.png" alt="">
+
+                </div>
+            </div>
+        </section>
+        <section id="Comprar" class="section3">
+            <section #Productos>
+                <h1>Nuestros productos más recientes</h1>
+                <ul class="opciones">
+                    <li><a href="Pasteles.html">Pasteles</a></li>
+                    <li><a href="Galletas.html">Galletas</a></li>
+                    <li><a href="Cupcakes.html">Cupcakes</a></li>
+                    <li><a href="Pays.html">Pays</a></li>
+                </ul>
+            </section>
+
+            <div class="contenedor" id="contenedor-productos">
+
+
+                <!-- <div class="item">
+                    <img src="IMG/Productos/Pasteles/Carrot cake Individual.webp" alt="Imagen 1">
+                    <h3>Carrot cake Individual</h3>
+                    <p>Precio: $56</p>
+                </div> -->
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+        <section class="section4">
+            <p>
+                "Endulza tus momentos con nuestra pasión por la repostería.
+                En cada pastel, encontrarás amor cocido a la perfección. Descubre un mundo de sabores
+                que te harán sonreír con cada mordida. ¡Tu felicidad tiene un sabor, y está en nuestra pastelería!"
+            </p>
+        </section>
+
+        <section id="SUCURSALES" class="section6">
+            <div class="content">
+                <p>AV. MANUEL J. CLOUTHIER
+                    Av. Manuel J. Clouthier 882 1, Col. . Zapopan, Jalisco
+                    Lunes a Sábado de 7:30 a 21:30 hrs, Domingos y Días Festivos de 9:00 a 21:05 hrs.
+                    E-mail: contacto@pasteleriaok.com.mx
+                    Teléfono(s): (33) 3125-4908 y 3125-4910
+                </p>
+                <img src="IMG/Sucursal/sucursal2.jpeg" alt="Imagen 1">
+            </div>
+            <div class="content">
+                <p>SAN ONOFRE
+                    Hda. La Quemada 1627, Col. Oblatos 44700. Guadalajara, Jalisco
+                    Lunes a Sábado de 7:30 a 21:30hrs, Domingos y Días Festivos de 9:00 a 21:05 hrs.
+                    E-mail: contacto@pasteleriaok.com.mx
+                    Teléfono(s): (33) 3699-3324 y 3699–1472
+                </p>
+                <img src="IMG/Sucursal/Sucursal1.jpg" alt="Imagen 2">
+            </div>
+        </section>
+
+
+        <section class="section5">
+            <div class="formulario-contacto">
+                <br>
+                <h1>Contactanos</h1>
+                <form action="/enviar" method="post">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+
+                    <button type="submit" class="boton-enviar">Enviar</button>
+                </form>
+                <br>
+                <br>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+
+
+        <div class="div2">
+
+            <p>Calle 21 Por 20 y 18
+                Cerrado ⋅ Abre a las 10 a. m.
+                Compras en tienda·
+                Entrega a domicilio</p>
+            <br>
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg></button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg></button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path
+                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                </svg></button>
+
+        </div>
+    </footer>
+    <script src="JS/Inicio.js"></script>
+    <script src="JS/Script.js"></script>
+</body>
+
+</html>

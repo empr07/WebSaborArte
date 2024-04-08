@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background-image: url('../IMG/Inico/im1.jpg');
+    background-size: cover;
+    color: white;
+    padding: 200px 0;
+    padding-top: 0%;
+}
+nav {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    
+}
+.nav-content{
+    display: flex;
+    justify-content: flex-end; 
+    height: 30px;
+    align-items: flex-start; 
+    text-align: center;
+    margin-right: 3%;
+}
+
+.orange-button {
+    background-color: #FF4B2B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 170px;
+    height: 40px;
+    border-bottom: 1px solid #FF4B2B;
+}
+
+
+
+.button{
+    margin-right: 230px;
+}
+
+.button button {
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    width: 130px;
+    height: 30px;
+    margin: 0 auto;
+    outline: none;
+    margin: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button button:hover {
+    border-radius: none;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid #FF4B2B;
+    border-radius: 0%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+button {
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.icon{
+    margin-right: 70px;
+}
+
+.text-info{
+    text-align: center; 
+    margin-top: 90px; 
+    color: white; 
+    margin-left: 130px; 
+    margin-right: 130px;
+}
+
+.text-info h1{
+    font-size: 200%; 
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.ver {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    width: 170px;
+    height: 40px;
+    transition: transform 80ms ease-in;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 60px;
+}
+.section1 {
+    margin-top: 10%;
+
+}
+.info-cart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.info {
+    text-align: center;
+}
+
+.info-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.section2 {
+    margin-top: 10%;
+
+}
+
+
+.Inicio-pastel {
+    width: 100%;
+    height: 120%;
+    background-color: white;
+    margin-top: 80px;
+}
+
+.contenedor-izquierdo {
+    width: 60%;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(81, 58, 63);
+}
+
+.contenedor-izquierdo h1 {
+    color: rgb(67, 45, 50);
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor-izquierdo p {
+    color: rgb(67, 45, 50);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text{
+    margin-left: 120px;
+}
+
+p {
+    color: rgb(67, 45, 50);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor-derecho {
+    width: 40%;
+    float: left;
+    justify-content: end;
+}
+
+.contenedor-derecho img {
+   width: 70%;
+   margin-left: 160px;
+  margin-bottom: 20%;
+}
+
+
+.section3 h1 {
+    color: rgb(67, 45, 50);
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.opciones {
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.opciones li {
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(63, 50, 57);
+    padding: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(72, 45, 67);
+    font-size: 21px;
+}
+
+.opciones li a {
+    text-decoration: none;
+    position: relative;
+}
+
+.opciones li a:hover {
+    border-bottom: 2px solid #FF4B2B;
+}
+
+.contenedor {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.item {
+    text-align: center;
+    margin: 5px;
+}
+
+
+.item img {
+    width: 310px;
+    height: auto;
+}
+
+.section6 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-right: 50px; 
+    margin-left: 50px;
+}
+
+img {
+    width: 240px;
+    height: 240px; 
+    height: auto;
+    
+}
+.item h3 {
+    margin-top: 5px;
+}
+
+
+p {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.div2 {
+    background-color: #261c1f;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    height: 110px;
+}
+
+
+.item1 {
+    text-align: center;
+}
+
+
+.section4{
+    text-align: center;
+}
+
+.section4{
+    margin: 10%;
+}
+
+
+
+.section4 h1 {
+    color: rgb(67, 45, 50);
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.section5 h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.section5 {
+    background-image: url('../IMG/Inico/image.webp');
+    background-color: #E6E3E3;
+    background-size: cover;
+    color: white;
+    opacity: 0.7;
+}
+
+
+.formulario-contacto {
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.formulario-contacto form {
+    margin-top: 15%;
+}
+
+.formulario-contacto h1 {
+    margin-top: 15%;
+}
+
+.campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.boton-enviar {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    width: 170px;
+    transition: transform 80ms ease-in;
+}
+
+.section6{
+    display: flex;
+}
+
+
+footer .div2 p
+{
+    color: white;
+}
+
+
+
+/*BOTON INICIAR SESION*/
+.round-button {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    width: 170px;
+    height: 40px;
+    transition: transform 80ms ease-in;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 60px;
+}
+
+.round-button:hover {
+    background-color: darkorange; /* Cambiar el color al pasar el mouse si lo deseas */
+}
