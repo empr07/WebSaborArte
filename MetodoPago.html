@@ -64,55 +64,55 @@
                     <strong>Datos de Compra</strong><br>
 
                     <label for="direccion">Dirección:</label>
-                    <input type="text" name="direccion" id="direccion"><br>
+                    <input type="text" name="direccion" id="direccion" maxlength="70"><br>
                     <p class="validacion-error" id="v_required_direccion"></p>
                     <p class="validacion-error" id="v_minlength_direccion"></p>
                     <p class="validacion-error" id="v_maxlength_direccion"></p>
 
                     <label for="pais">País:</label>
                     <input type="text" onkeypress="return /[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]/.test(event.key);" name="pais"
-                        id="pais" required><br>
+                        id="pais" required maxlength="20"><br>
                     <p class="validacion-error" id="v_required_pais"></p>
                     <p class="validacion-error" id="v_maxlength_pais"></p>
 
                     <label for="nombres">Nombre:</label>
                     <input type="text" onkeypress="return /[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]/.test(event.key);" name="nombres"
-                        id="nombres" required><br>
+                        id="nombres" required maxlength="50"><br>
                     <p class="validacion-error" id="v_required_nombres"></p>
                     <p class="validacion-error" id="v_maxlength_nombres"></p>
 
                     <label for="apellidos">Apellido:</label>
-                    <input type="text" onkeypress="return /[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]/.test(event.key);" name="apellidos"
+                    <input type="text" maxlength="50" onkeypress="return /[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]/.test(event.key);" name="apellidos"
                         id="apellidos" required><br>
                     <p class="validacion-error" id="v_required_apellidos"></p>
                     <p class="validacion-error" id="v_maxlength_apellidos"></p>
 
                     <label for="telefono">Número de Teléfono:</label>
-                    <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" name="telefono"
+                    <input type="text" maxlength="13" onkeypress="return event.charCode >= 48 && event.charCode <= 57" name="telefono"
                         id="telefono" required><br>
                     <p class="validacion-error" id="v_required_telefono"></p>
                     <p class="validacion-error" id="v_minlength_telefono"></p>
                     <p class="validacion-error" id="v_maxlength_telefono"></p>
 
                     <label for="cp">Código Postal:</label>
-                    <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" name="cp"
+                    <input type="text" maxlength="5" onkeypress="return event.charCode >= 48 && event.charCode <= 57" name="cp"
                         id="cp" required><br>
                     <p class="validacion-error" id="v_required_cp"></p>
                     <p class="validacion-error" id="v_maxlength_cp"></p>
 
                     <label for="calles">Calles:</label>
-                    <input type="text" name="calles" id="calles" required><br>
+                    <input type="text" maxlength="15" name="calles" id="calles" required><br>
                     <p class="validacion-error" id="v_required_calles"></p>
                     <p class="validacion-error" id="v_maxlength_calles"></p>
 
                     <label for="ciudad">Ciudad:</label>
-                    <input type="text" onkeypress="return /[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]/.test(event.key);" name="ciudad"
+                    <input type="text" maxlength="30" onkeypress="return /[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]/.test(event.key);" name="ciudad"
                         id="ciudad" required><br>
                     <p class="validacion-error" id="v_required_ciudad"></p>
                     <p class="validacion-error" id="v_maxlength_ciudad"></p>
 
                     <label for="estado">Estado:</label>
-                    <input type="text" onkeypress="return /[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]/.test(event.key);" name="estado"
+                    <input type="text" maxlength="30" onkeypress="return /[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]/.test(event.key);" name="estado"
                         id="estado" required>
                     <p class="validacion-error" id="v_required_estado"></p>
                     <p class="validacion-error" id="v_maxlength_estado"></p>

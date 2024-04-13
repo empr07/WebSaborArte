@@ -5,10 +5,19 @@ if (!isAdmin) {
 
 const id_producto = localStorage.getItem("id_producto") ? localStorage.getItem("id_producto") : 0
 
-function loadImage() {
-    const ruta = document.getElementById("rutaimagen").value
-    const image = document.getElementById('image');
-    image.src = ruta;
+function onFileSelected() {
+    var fileInput = document.getElementById('rutaimagen');
+
+    if (fileInput.files && fileInput.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            const image = document.getElementById('image');
+            image.src = e.target.result;
+        };
+
+        reader.readAsDataURL(fileInput.files[0]);
+    }
 }
 
 fetch('https://api-saboryarte.onrender.com/api/categorias?activo=1')
@@ -70,11 +79,10 @@ if (id_producto > 0) {
         document.getElementById("idsabor").value = data.idsabor
         document.getElementById("stock").value = data.stock
         document.getElementById("precio").value = data.precio
-        document.getElementById("rutaimagen").value = data.rutaimagen
+        document.getElementById("image").src = data.rutaimagen
         document.getElementById("activo").value = data.activo
-        document.getElementById("fecha").value = data.fecharegistro.slice(0, 10)
+        document.getElementById("fecha").value = data.fecharegistro.split('T')[0]
         document.getElementById("title").innerHTML = 'Editando Producto: ' + data.id
-        loadImage()
     })
 
 }
@@ -96,7 +104,7 @@ function save() {
     const descripcion = document.getElementById("descripcion").value;
     const precio = Number(document.getElementById("precio").value);
     const stock = Number(document.getElementById("stock").value);
-    const rutaimagen = document.getElementById("rutaimagen").value;
+    const rutaimagen = document.getElementById("image").src;
     const activo = document.getElementById("activo").value;
     const fecha = document.getElementById("fecha").value;
     fetch(localStorage.getItem("id_producto") ? "https://api-saboryarte.onrender.com/api/productos/" + localStorage.getItem("id_producto") : "https://api-saboryarte.onrender.com/api/productos", {
@@ -132,7 +140,7 @@ function save() {
     }) // Analizar la respuesta como JSON
 }
 
-function logout(){
+function logout() {
     localStorage.removeItem('token')
     window.location.href = '../Inicio.html'
 }
